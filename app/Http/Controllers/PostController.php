@@ -81,4 +81,17 @@ class PostController extends Controller
     {
         //
     }
+
+    public function contact($id){
+
+        
+        return view('contact');
+
+    }
+
+    public function postView($id,$name,$password){
+
+        return view('post', compact('id','name','password'));
+    }
+
 }
