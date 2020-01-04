@@ -43,7 +43,7 @@ Route::get('/', function () {
 
 // Route::resource('post', 'PostController');
 
-// Route::get('/contact', 'PostController@contact');
-Route::get('/contact/{id}', 'PostController@contact');
+ Route::get('/contact', 'PostController@contact');
+//Route::get('/contact/{id}', 'PostController@contact');
 
-Route::get('/post/{id}/{name}/{pasword}', 'PostController@postView');
+Route::get('/post', 'PostController@postView');
